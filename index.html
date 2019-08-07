@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hokup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="hover.css" rel="stylesheet" media="all">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body data-spy="scroll" data-target="#header-navbar">
+    <div class="bg-site">
+
+<!-- ***NAVBAR*** -->
+        <nav class="navbar navbar-expand-md fixed-top bg-transparent" id="header">
+
+            <div class="container">
+                <a class="navbar-brand hvr-grow" id="logo" href="https://www.hokup.com.br">
+                    <img src="hkplogo.svg">
+                </a>
+
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="d-flex justify-content-center align-items-center">
+                    <ul class="navbar-nav ml-md-auto" id="header-navbar">
+                        <li class="nav-item pl-3 pr-3 active hvr-grow">
+                          <a class="nav-link" href="#home">hokup</a>
+                        </li>
+                        <li class="nav-item pl-3 pr-3 hvr-grow">
+                          <a class="nav-link" href="#especialidades">ideia</a>
+                        </li>
+                        <li class="nav-item pl-3 pr-3 hvr-grow">
+                          <a class="nav-link" href="#diferenciais">solução</a>
+                        </li>
+                        <li class="nav-item pl-3 pr-3 hvr-grow">
+                          <a class="nav-link" href="#contato">futuro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!-- ***SITE CONTENT*** -->
+<div class="container" id="fullpage">
+
+<!-- ***HOME PAGE*** -->
+        <div class="row d-flex justify-content-center align-items-center" id="home">
+
+        <div class="col-md-6 col-12 h-50 d-flex justify-content-center align-items-md-center align-items-end text-center text-md-left animated wow fadeInLeft">
+            <div id="home-page" class="p-3 p-md-0">
+                <h1>As boas ideias não tem idade, apenas <span style="color:#d74653">futuro</span>!</h1>
+                <p>
+                    hokup é uma empresa que desenvolve soluções digitais personalizadas para o seu negócio.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-12 h-50 d-flex justify-content-center align-items-md-center align-items-start animated wow fadeIn" data-wow-delay="0.7s" data-wow-duration="0.8s">
+            <div class="d-flex align-items-start align-items-md-center justify-content-center p-3 p-md-0" id="home-image">                
+                <img class="img-fluid mx-auto align-self-start align-self-md-center" src="home.svg">
+            </div>
+        </div>
+    </div>
+
+
+<!-- ***ESPECIALIDADES PAGE*** -->
+    <div class="row" id="especialidades">
+
+        <div class="col-12 justify-content-center align-self-end animated wow fadeInDown"  id="especialidades-title">
+            <h1 class="text-center">Qual é a sua ideia?</h1>
+        </div>
+
+    <div class="col-12 d-table d-md-inline-flex">
+        <div class="col-md-4 col-sm-12 d-block justify-content-center align-self-start align-self-md-center" id="especialidades-page">
+            <div class="parent d-flex flex-md-column flex-wrap justify-content-around justify-content-md-start align-items-center">
+
+                <a class="child bak active wow flipInX hvr-grow" data-wow-delay="0.6s" data-wow-duration="0.5s">
+                    <div class="especialidades-btn text-center text-md-left" id="img_app" href="javascript:" onclick="changeImg('app.svg')">
+                        Aplicativos
+                    </div>
+                </a>                
+                <a class="child wow flipInX hvr-grow" data-wow-delay="1s" data-wow-duration="0.5s">
+                     <div class="especialidades-btn text-center text-md-left" id="img_games" href="javascript:" onclick="changeImg('games.svg')">
+                        Games
+                    </div>
+                </a>
+                <a class="child wow flipInX hvr-grow" data-wow-delay="1.2s" data-wow-duration="0.5s">
+                    <div class="especialidades-btn text-center text-md-left" id="img_vr" href="javascript:" onclick="changeImg('vr.svg')">
+                        VR
+                    </div>
+                </a>
+                <a class="child wow flipInX hvr-grow" data-wow-delay="0.8s" data-wow-duration="0.5s">
+                    <div class="especialidades-btn text-center text-md-left" id="img_web" href="javascript:" onclick="changeImg('web.svg')">
+                        Website
+                    </div>
+                </a>                
+                <a class="child wow flipInX hvr-grow" data-wow-delay="1.4s" data-wow-duration="0.5s">
+                    <div class="especialidades-btn text-center text-md-left" id="img_design" href="javascript:" onclick="changeImg('dg.svg')">
+                        Design Digital
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-12 position-relative wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1s" id="especialidades-image">
+            <div class="imageholder d-flex justify-content-center align-items-center">
+                <img class="img-fluid" id="imageHolder" src="app.svg">
+            </div>  
+            <div class="d-flex h-25 align-items-start justify-content-center position-relative" id="frases">
+                <div class="d-flex justify-content-center w-75 position-absolute">
+                <p class="text-center flex-wrap" id="out">Aumente a eficácia do seu negócio com a plataforma mais acessível do momento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+<!-- ***DIFERENCIAIS PAGE*** -->
+    <div class="row d-flex justify-content-center align-items-center" id="diferenciais">            
+
+        <div class="col-md-6 col-12 h-50 d-flex justify-content-center align-items-md-center align-items-end text-center text-md-left order-md-2 wow fadeIn" data-wow-delay="0.7s" data-wow-duration="0.8s" >
+            <div id="diferenciais-page" class="p-3 p-md-0 ">
+                <h1>O <span style="color:#d74653">futuro</span> está mais próximo do que você imagina!</h1>
+                <p>
+                    Use a tecnologia a favor do seu negócio!
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 h-50 d-flex justify-content-center align-items-md-center align-items-start order-md-1 animated wow fadeInLeft">
+            <div class="d-flex align-items-start align-items-md-center justify-content-center p-3 p-md-0" id="diferenciais-image">              
+                <img class="img-fluid mx-auto align-self-start align-self-md-center" src="end.svg"> 
+            </div>
+        </div>
+    </div>
+
+
+<!-- ***CONTATO PAGE*** -->
+    <div class="row"  id="contato">
+        <div class="col-sm-12 col-md-8 offset-md-2 d-flex justify-content-center align-items-center text-center pt-5 pt-md-0" id="contato-page">
+            <div class="d-table w-100">
+                <div class="animated wow fadeInDown" >
+                    <h1>E ai,<br>vamos?</h1>
+                </div>
+
+                <form class="contact-form animated wow fadeIn pt-md-5" data-wow-delay="0.7s" data-wow-duration="0.8s" action="contactform.php" method="post" >
+                    <div class="form-row" id="contato-page">
+                        <div class="col-md-6 col-sm-12 pt-1 pl-2 pr-2 pb-4" id="contato-nome">
+                            <input class="form-control pb-2" type="text" placeholder="nome:" name="name" required>
+                        </div>
+                        <div class="col-md-6 col-sm-12 pt-1 pl-2 pr-2 pb-4" id="contato-email">
+                            <input class="form-control pb-2" type="text" placeholder="e-mail:" name="mail" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group p-1">
+                        <textarea class="form-control" name="message" id="mensagem" rows="6" placeholder="ideia:" required></textarea>
+                        <br>
+                        <button class="btn btn-enviar float-right animated wow fadeInUp hvr-grow" data-wow-delay="0.7s" data-wow-duration="0.6s" type="submit" name="submit"> enviar </button>
+                    </div>
+                </form>                                
+            </div>
+        </div>                    
+    </div>
+
+
+<!-- ****FOOTER**** -->
+    <div class="row">
+        <footer class="page-footer font-small d-flex align-self-center" id="footer">
+            <div class="col-12 d-flex justify-content-between align-items-center text-center">
+
+                <div class="order-1 d-flex justify-content-center align-items-center" id="footer-socialmedia">
+                    <a href="https://www.instagram.com/hokup.co/" class="p-md-3 p-1 hvr-float" target="_blank"><i class=" fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/hokup" class="p-md-3 p-1 hvr-float" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/hokup.co" class="p-md-3 p-1 hvr-float" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+
+                <div class="order-2 d-flex justify-content-center align-items-center" id="footer-logo">
+                    <a href="#" class="hvr-grow"><img src="hkplogosolo.png"></a>
+                </div>
+
+                <div class="order-3 d-flex justify-content-center align-items-center flex-nowrap" id="footer-copyright">
+                    <span>2019 © Copyright <a href="https://hokup.com.br"> hokup</a></span>
+                </div>            
+            </div>       
+        </footer>
+    </div>
+
+    <!-- style="border:2px solid #ff00ff" -->
+
+
+</div>
+
+<script type="text/javascript">
+
+    function changeImg(image)
+    {
+      var imghol = document.getElementById("imageHolder");
+      imghol.src = image;
+    }
+
+    $(window).scroll(function()
+    {
+         $('nav').toggleClass('scrolled', $(this).scrollTop() > 1);
+    });
+
+    $(document).on('click', 'ul li a', function()
+    {
+        $(this).addClass('active').siblings().removeClass('active')
+    });
+
+    var elements = document.getElementsByClassName("child");
+            for(var i = 0; i < elements.length; i++)
+            {
+                elements[i].onclick = function(){
+                    
+                    // remove class from sibling
+                    
+                    var el = elements[0];
+                    while(el)
+                    {
+                        if(el.tagName === "A"){
+                            //remove class
+                            el.classList.remove("bak");
+                            
+                        }
+                        // pass to the new sibling
+                        el = el.nextSibling;
+                    }
+                    
+                  this.classList.add("bak");  
+                };
+            }
+
+            var text = 
+        {
+            img_app : "Aumente a eficácia do seu negócio com a plataforma mais acessível do momento.",  
+            img_web : "De vida a sua marca e se destaque no mundo digital.",            
+            img_games : "Faça a diferença no mercado usando o entretenimento a seu favor!",
+            img_vr : "Crie seu próprio universo com o poder da realidade virtual.",
+            img_design : "De uma cara nova ao seu negócio!",
+        };
+
+         $(".especialidades-btn").on("click", function () 
+         {
+                var id = $(this).attr("id");
+                $("#out").text(text[id]);
+        });        
+    
+</script>
+<script>
+    var wow = new WOW(
+          {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       0,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+              // the callback is fired every time an animation is started
+              // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null,    // optional scroll container selector, otherwise use window,
+            resetAnimation: true,     // reset animation on end (default is true)
+          }
+        );
+        wow.init();
+</script>
+<script>
+    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+</script>
+</div>
+</body>
+</html>
