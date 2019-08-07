@@ -9,6 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="jquery.min.js"></script>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -44,22 +45,22 @@
                 <div class="d-flex justify-content-center align-items-center">
                     <ul class="navbar-nav ml-md-auto" id="header-navbar">
                         <li class="nav-item pl-3 pr-3 active hvr-grow">
-                            <a class="nav-link" href="#home">hokup</a>
+                            <a class="nav-link lang" key="txt001" href="#home">hokup</a>
                         </li>
                         <li class="nav-item pl-3 pr-3 hvr-grow">
-                            <a class="nav-link" href="#especialidades">ideia</a>
+                            <a class="nav-link lang" key="txt002" href="#especialidades">ideia</a>
                         </li>
                         <li class="nav-item pl-3 pr-3 hvr-grow">
-                            <a class="nav-link" href="#diferenciais">solução</a>
+                            <a class="nav-link lang" key="txt003" href="#diferenciais">solução</a>
                         </li>
                         <li class="nav-item pl-3 pr-3 hvr-grow">
-                            <a class="nav-link" href="#contato">futuro</a>
+                            <a class="nav-link lang" key="txt004" href="#contato">futuro</a>
                         </li>
                         <li class="nav-item pl-3 pr-3 hvr-grow">
-                            <a href="#br" data-reload>Português</a>
+                            <button class="translate" id="br">Português</button>
                         </li>
                         <li class="nav-item pl-3 pr-3 hvr-grow">
-                            <a href="#eng" data-reload>English</a>
+                            <button class="translate" id="en">English</button>
                         </li>
                     </ul>
                 </div>
@@ -74,8 +75,8 @@
 
         <div class="col-md-6 col-12 h-50 d-flex justify-content-center align-items-md-center align-items-end text-center text-md-left animated wow fadeInLeft">
             <div id="home-page" class="p-3 p-md-0">
-                <h1>As boas ideias não tem idade, apenas <span style="color:#d74653">futuro</span>!</h1>
-                <p id="txt2">
+                <h1 class="lang" key="txt1">As boas ideias não tem idade, apenas <span style="color:#d74653">futuro</span>!</h1>
+                <p class="lang" key="txt2">
                     hokup é uma empresa que desenvolve soluções digitais personalizadas para o seu negócio.
                 </p>
             </div>
@@ -93,7 +94,7 @@
     <div class="row" id="especialidades">
 
         <div class="col-12 justify-content-center align-self-end animated wow fadeInDown"  id="especialidades-title">
-            <h1 class="text-center">Qual é a sua ideia?</h1>
+            <h1 class="text-center lang" key="txt12">Qual é a sua ideia?</h1>
         </div>
 
     <div class="col-12 d-table d-md-inline-flex">
@@ -101,27 +102,27 @@
             <div class="parent d-flex flex-md-column flex-wrap justify-content-around justify-content-md-start align-items-center">
 
                 <a class="child bak active wow flipInX hvr-grow" data-wow-delay="0.6s" data-wow-duration="0.5s">
-                    <div class="especialidades-btn text-center text-md-left" id="img_app" href="javascript:" onclick="changeImg('app.svg')">
+                    <div class="especialidades-btn text-center text-md-left lang" key="txt3" id="img_app" href="javascript:" onclick="changeImg('app.svg')">
                         Aplicativos
                     </div>
                 </a>                
                 <a class="child wow flipInX hvr-grow" data-wow-delay="1s" data-wow-duration="0.5s">
-                     <div class="especialidades-btn text-center text-md-left" id="img_games" href="javascript:" onclick="changeImg('games.svg')">
+                     <div class="especialidades-btn text-center text-md-left lang" key="txt4" id="img_games" href="javascript:" onclick="changeImg('games.svg')">
                         Games
                     </div>
                 </a>
                 <a class="child wow flipInX hvr-grow" data-wow-delay="1.2s" data-wow-duration="0.5s">
-                    <div class="especialidades-btn text-center text-md-left" id="img_vr" href="javascript:" onclick="changeImg('vr.svg')">
+                    <div class="especialidades-btn text-center text-md-left lang" key="txt5" id="img_vr" href="javascript:" onclick="changeImg('vr.svg')">
                         VR
                     </div>
                 </a>
                 <a class="child wow flipInX hvr-grow" data-wow-delay="0.8s" data-wow-duration="0.5s">
-                    <div class="especialidades-btn text-center text-md-left" id="img_web" href="javascript:" onclick="changeImg('web.svg')">
+                    <div class="especialidades-btn text-center text-md-left lang" key="txt6" id="img_web" href="javascript:" onclick="changeImg('web.svg')">
                         Website
                     </div>
                 </a>                
                 <a class="child wow flipInX hvr-grow" data-wow-delay="1.4s" data-wow-duration="0.5s">
-                    <div class="especialidades-btn text-center text-md-left" id="img_design" href="javascript:" onclick="changeImg('dg.svg')">
+                    <div class="especialidades-btn text-center text-md-left lang" key="txt7" id="img_design" href="javascript:" onclick="changeImg('dg.svg')">
                         Design Digital
                     </div>
                 </a>
@@ -148,8 +149,8 @@
 
         <div class="col-md-6 col-12 h-50 d-flex justify-content-center align-items-md-center align-items-end text-center text-md-left order-md-2 wow fadeIn" data-wow-delay="0.7s" data-wow-duration="0.8s" >
             <div id="diferenciais-page" class="p-3 p-md-0 ">
-                <h1>O <span style="color:#d74653">futuro</span> está mais próximo do que você imagina!</h1>
-                <p>
+                <h1 class="lang" key="txt8">O <span style="color:#d74653">futuro</span> está mais próximo do que você imagina!</h1>
+                <p class="lang" key="txt9">
                     Use a tecnologia a favor do seu negócio!
                 </p>
             </div>
@@ -167,7 +168,7 @@
         <div class="col-sm-12 col-md-8 offset-md-2 d-flex justify-content-center align-items-center text-center pt-5 pt-md-0" id="contato-page">
             <div class="d-table w-100">
                 <div class="animated wow fadeInDown" >
-                    <h1>E ai,<br>vamos?</h1>
+                    <h1 class="lang" key="txt10">E ai,<br>vamos?</h1>
                 </div>
 
                 <form class="contact-form animated wow fadeIn pt-md-5" data-wow-delay="0.7s" data-wow-duration="0.8s" action="contactform.php" method="post" >
@@ -183,7 +184,7 @@
                     <div class="form-group p-1">
                         <textarea class="form-control" name="message" id="mensagem" rows="6" placeholder="ideia:" required></textarea>
                         <br>
-                        <button class="btn btn-enviar float-right animated wow fadeInUp hvr-grow" data-wow-delay="0.7s" data-wow-duration="0.6s" type="submit" name="submit"> enviar </button>
+                        <button class="btn btn-enviar float-right animated wow fadeInUp hvr-grow lang" key="txt11" data-wow-delay="0.7s" data-wow-duration="0.6s" type="submit" name="submit"> enviar </button>
                     </div>
                 </form>                                
             </div>
@@ -219,36 +220,57 @@
     </div>
 
     <!-- script for multi language-->
-    <script>
-    // Define language reload anchors 
-    var dataReload = document.querySelectorAll("[data-reload]");
-
+        <script>
     // Language translations
-    var language = {
-        br: {
-            txt_2: "hokup é uma empresa que desenvolve soluções digitais personalizadas para o seu negócio."
+    var arrLang = {
+        'br': {
+            'txt001': 'hokup',
+            'txt002': 'ideia',
+            'txt003': 'solução',
+            'txt004': 'futuro',
+            'txt1': 'As boas ideias não tem idade, apenas futuro!',
+            'txt2': 'hokup é uma empresa que desenvolve soluções digitais personalizadas para o seu negócio.',
+            'txt3': 'Aplicativos',
+            'txt4': 'Games',
+            'txt5': 'VR',
+            'txt6': 'Website',
+            'txt7': 'Design Digital',
+            'txt8': 'O futuro está mais próximo do que você imagina!',
+            'txt9': 'Use a tecnologia a favor do seu negócio!',
+            'txt10': 'E ai, vamos?',
+            'txt11': 'enviar',
+            'txt12': 'Qual é a sua ideia?'
         },
-        eng: {
-            txt_2: "hokup is so fucking awesome."
+        'en': {
+            'txt001': 'hokup',
+            'txt002': 'idea',
+            'txt003': 'solution',
+            'txt004': 'future',
+            'txt1': 'Pedro Henrique Alencar BaPtista',
+            'txt2': 'Bernardinho JSquery Braga',
+            'txt3': 'App',
+            'txt4': 'Games',
+            'txt5': 'VR',
+            'txt6': 'Website',
+            'txt7': 'Digital Design',
+            'txt8': 'So baby put me closer.',
+            'txt9': 'TECH IS THE FUTURE',
+            'txt10': "Let's do it?",
+            'txt11': 'send',
+            'txt12': "What's your idea?"
         }
     };
+    // Language reload on button click
+    $(function () {
+        $('.translate').click(function () {
+            var lang = $(this).attr('id');
 
-    // Define language via window hash
-    if (window.location.hash) {
-        if (window.location.hash == "#eng") {
-            txt2.textContent = language.eng.txt_2;
-        } else {
-            txt2.textContent = language.br.txt_2;
-        }
-    }
-
-    // Define language reload onClick illiteration
-    for (i = 0; i <= dataReload.length; i++) {
-        dataReload[i].onclick = function () {
-            location.reload(true);
-        };
-    }
-    </script>
+            $('.lang').each(function (index, element) {
+                $(this).text(arrLang[lang][$(this).attr('key')]);
+            });
+        });
+    });
+        </script>
 
     <script type="text/javascript">
 
@@ -304,7 +326,7 @@
          {
                 var id = $(this).attr("id");
                 $("#out").text(text[id]);
-        });        
+        });           
     
     </script>
     <script>
